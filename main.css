@@ -1,0 +1,4 @@
+.clock-output {
+  display: flex;
+  flex-flow: row nowrap;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "stopwatch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:tkswann2/stopwatch.git",
+    "type": "git"
+  },
+  "author": "Thomas Swann <tkswann@mac.com>",
+  "license": "MIT",
+  "dependencies": {
+    "materialize-css": "^0.97.8"
+  }
+}
