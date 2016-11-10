@@ -1,21 +1,5 @@
 'use strict'
-const onesEl = document.querySelector('#ones')
-const tensEl = document.querySelector('#tens')
-const mensEl = document.querySelector('#mens')
-const tenmensEl = document.querySelector('#tenmens')
-const start_stopButton = document.querySelector('#start_stop')
-const lapButton = document.querySelector('#laptime')
-const miliEl = document.querySelector('#mili')
-
-const onesEl1 = document.querySelector('#ones1')
-const tensEl1 = document.querySelector('#tens1')
-const mensEl1 = document.querySelector('#mens1')
-const tenmensEl1 = document.querySelector('#tenmens1')
-const start_stopButton1 = document.querySelector('#start_stop1')
-const lapButton1 = document.querySelector('#laptime1')
-const miliEl1 = document.querySelector('#mili1')
-
-function StopWatch(el1, el2, el3, el4) {
+module.exports = function StopWatch(el1, el2, el3, el4) {
   let      tenmens = 0
   ,           mens = 0
   ,           tens = 0
@@ -84,26 +68,3 @@ function StopWatch(el1, el2, el3, el4) {
     }
   }
 }
-
-const clock1 = new StopWatch(onesEl, tensEl, mensEl, tenmensEl)
-const clock2 = new StopWatch(onesEl1, tensEl1, mensEl1, tenmensEl1)
-
-let bool = true
-start_stopButton.addEventListener(`click`, () => {
-  clock1.startAndStopClock(bool)
-  bool = !bool
-})
-
-lapButton.addEventListener(`click`, () => {
-  clock1.lapTime()
-})
-
-let loob = true
-start_stopButton1.addEventListener(`click`, () => {
-  clock2.startAndStopClock(loob)
-  loob = !loob
-})
-
-lapButton1.addEventListener(`click`, () => {
-  clock2.lapTime()
-})
